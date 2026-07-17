@@ -66,7 +66,16 @@
           "settings": {
             "heading": "Requirements",
             "icon": "check_mark",
-            "content": "<ul><li>GiggleTech OSC Router [<a href=\"https://github.com/giggletech/GiggleTech_OSC_Router/releases/tag/v1.0.0\" target=\"_blank\" title=\"Giggletech Router\">download]</a></li><li>USB power source [Valve Index or battery bank]</li><li>PC VR</li><li>WiFi network</li><li>VRChat</li></ul>",
+            "content": "<ul><li>PC case with <strong>120mm</strong> top and/or rear exhaust fan(s)</li><li>Clearance around your exhaust fans for the duct adapters</li><li>A path to vent hot air outside (window, wall vent, or similar)</li><li>Choose Top Fans (1 / 2 / 3) and Rear Fans (1 / 1 + PSU) to match your case</li></ul>",
+            "page": ""
+          }
+        },
+        "vent_kit_included": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Included",
+            "icon": "box",
+            "content": "<ul><li>Selected Exhaust Adaptors</li><li>Top Rear Combiner</li><li>Rear Duct Connection (If Applicable)</li><li>Window Duct</li><li>Window Mount</li><li>High Flow Window Exhaust Fan</li><li>Fan Wiring (3 Pin Motherboard Connection)</li><li>Necessary Screws</li></ul>",
             "page": ""
           }
         },
@@ -88,6 +97,7 @@
         "description",
         "8a866a3a-d489-4d64-84d9-44daf182d08a",
         "61453d5f-79dd-492e-8282-459e611e76ab",
+        "vent_kit_included",
         "share"
       ],
       "settings": {
