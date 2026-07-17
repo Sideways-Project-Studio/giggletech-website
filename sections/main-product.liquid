@@ -596,82 +596,82 @@
                 {%- endif -%}
 
                 <div class="vent-kit-picker__diagram">
-                  {%- assign vent_kit_diagram_alt = block.settings.heading | default: product.title -%}
-                  {%- if block.settings.diagram != blank -%}
-                    {{
-                      block.settings.diagram
-                      | image_url: width: 1200
-                      | image_tag:
-                        loading: 'lazy',
-                        widths: '375, 550, 750, 1100, 1200',
-                        sizes: '(min-width: 750px) 550px, 100vw',
-                        class: 'vent-kit-picker__image',
-                        alt: vent_kit_diagram_alt
-                    }}
-                  {%- else -%}
-                    <img
-                      class="vent-kit-picker__image"
-                      src="{{ 'vent-kit-parts-diagram.png' | asset_url }}"
-                      alt="{{ vent_kit_diagram_alt | escape }}"
-                      width="1200"
-                      height="900"
-                      loading="lazy"
-                    >
-                  {%- endif -%}
+                  <img
+                    class="vent-kit-picker__image"
+                    data-vent-kit-image
+                    src="{{ '1R.png' | asset_url }}"
+                    alt="{{ block.settings.heading | default: product.title | escape }}"
+                    width="1200"
+                    height="900"
+                    loading="lazy"
+                  >
+                  <p class="vent-kit-picker__diagram-empty caption" data-vent-kit-empty hidden>
+                    Select top and rear options to preview your kit.
+                  </p>
                 </div>
 
-                <fieldset class="vent-kit-picker__options">
-                  <legend class="visually-hidden">{{ block.settings.heading | default: 'Select your mount points' | escape }}</legend>
-                  <label class="vent-kit-picker__option" for="VentKit-top-rear-{{ section.id }}">
-                    <input
-                      type="checkbox"
-                      id="VentKit-top-rear-{{ section.id }}"
-                      value="top-rear"
-                      data-group="top"
-                      data-part="rear"
-                    >
-                    <span class="vent-kit-picker__checkbox" aria-hidden="true"></span>
-                    <span class="vent-kit-picker__label">Top rear</span>
-                  </label>
-                  <label class="vent-kit-picker__option" for="VentKit-top-front-{{ section.id }}">
-                    <input
-                      type="checkbox"
-                      id="VentKit-top-front-{{ section.id }}"
-                      value="top-front"
-                      data-group="top"
-                      data-part="front"
-                    >
-                    <span class="vent-kit-picker__checkbox" aria-hidden="true"></span>
-                    <span class="vent-kit-picker__label">Top front</span>
-                  </label>
-                  <label class="vent-kit-picker__option" for="VentKit-side-upper-{{ section.id }}">
-                    <input
-                      type="checkbox"
-                      id="VentKit-side-upper-{{ section.id }}"
-                      value="side-upper"
-                      data-group="side"
-                      data-part="upper"
-                    >
-                    <span class="vent-kit-picker__checkbox" aria-hidden="true"></span>
-                    <span class="vent-kit-picker__label">Side upper</span>
-                  </label>
-                  <label class="vent-kit-picker__option" for="VentKit-side-lower-{{ section.id }}">
-                    <input
-                      type="checkbox"
-                      id="VentKit-side-lower-{{ section.id }}"
-                      value="side-lower"
-                      data-group="side"
-                      data-part="lower"
-                    >
-                    <span class="vent-kit-picker__checkbox" aria-hidden="true"></span>
-                    <span class="vent-kit-picker__label">Side lower</span>
-                  </label>
+                <fieldset class="vent-kit-picker__group">
+                  <legend class="form__label">Top Fans</legend>
+                  <div class="vent-kit-picker__choices">
+                    <label class="vent-kit-picker__choice">
+                      <input type="radio" name="vent-kit-top-{{ section.id }}" value="1" data-vent-top>
+                      <span>1</span>
+                    </label>
+                    <label class="vent-kit-picker__choice">
+                      <input type="radio" name="vent-kit-top-{{ section.id }}" value="2" data-vent-top>
+                      <span>2</span>
+                    </label>
+                    <label class="vent-kit-picker__choice">
+                      <input type="radio" name="vent-kit-top-{{ section.id }}" value="3" data-vent-top>
+                      <span>3</span>
+                    </label>
+                    <label class="vent-kit-picker__choice">
+                      <input type="radio" name="vent-kit-top-{{ section.id }}" value="None" data-vent-top checked>
+                      <span>None</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="vent-kit-picker__group">
+                  <legend class="form__label">Rear Fans</legend>
+                  <div class="vent-kit-picker__choices">
+                    <label class="vent-kit-picker__choice">
+                      <input type="radio" name="vent-kit-rear-{{ section.id }}" value="1" data-vent-rear checked>
+                      <span>1</span>
+                    </label>
+                    <label class="vent-kit-picker__choice">
+                      <input type="radio" name="vent-kit-rear-{{ section.id }}" value="1 + PSU" data-vent-rear>
+                      <span>1 + PSU</span>
+                    </label>
+                    <label class="vent-kit-picker__choice">
+                      <input type="radio" name="vent-kit-rear-{{ section.id }}" value="None" data-vent-rear>
+                      <span>None</span>
+                    </label>
+                  </div>
                 </fieldset>
 
                 <p class="vent-kit-picker__selection caption" data-selection-summary hidden></p>
 
-                <script type="application/json">
+                <script type="application/json" data-vent-kit-images>
+                  {
+                    "1R.png": {{ '1R.png' | asset_url | json }},
+                    "1R_PSU.png": {{ '1R_PSU.png' | asset_url | json }},
+                    "1T.png": {{ '1T.png' | asset_url | json }},
+                    "1T_1R.png": {{ '1T_1R.png' | asset_url | json }},
+                    "1T_1R_PSU.png": {{ '1T_1R_PSU.png' | asset_url | json }},
+                    "2T.png": {{ '2T.png' | asset_url | json }},
+                    "2T_1R.png": {{ '2T_1R.png' | asset_url | json }},
+                    "2T_1R_PSU.png": {{ '2T_1R_PSU.png' | asset_url | json }},
+                    "3T.png": {{ '3T.png' | asset_url | json }},
+                    "3T_1R.png": {{ '3T_1R.png' | asset_url | json }},
+                    "3T_1R_PSU.png": {{ '3T_1R_PSU.png' | asset_url | json }}
+                  }
+                </script>
+                <script type="application/json" data-vent-kit-variants>
                   {{ product.variants | json }}
+                </script>
+                <script type="application/json" data-vent-kit-option-names>
+                  {{ product.options | json }}
                 </script>
               </vent-kit-picker>
             {%- when 'buy_buttons' -%}
@@ -1907,23 +1907,17 @@
           "type": "text",
           "id": "heading",
           "label": "Heading",
-          "default": "Select your mount points"
+          "default": "Build your vent kit"
         },
         {
           "type": "text",
           "id": "helper_text",
           "label": "Helper text",
-          "default": "Choose every position that matches your PC case. Price updates with your selection."
-        },
-        {
-          "type": "image_picker",
-          "id": "diagram",
-          "label": "Parts diagram",
-          "info": "Optional override. Defaults to the theme asset vent-kit-parts-diagram.png."
+          "default": "Choose top and rear fan adaptors. The diagram and price update with your selection."
         },
         {
           "type": "paragraph",
-          "content": "Requires product options: Top mounts (None / Top rear / Top front / Top rear + Top front) and Side mounts (None / Side upper / Side lower / Side upper + Side lower)."
+          "content": "Requires product options named Top Fans (None / 1 / 2 / 3) and Rear Fans (None / 1 / 1 + PSU). Diagram images use assets like 2T_1R.png and 3T_1R_PSU.png."
         }
       ]
     }

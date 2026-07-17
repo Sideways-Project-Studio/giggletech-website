@@ -34,8 +34,8 @@
         "vent_kit_parts": {
           "type": "vent_kit_parts",
           "settings": {
-            "heading": "Select your mount points",
-            "helper_text": "Choose every position that matches your PC case. Price updates with your selection."
+            "heading": "Build your vent kit",
+            "helper_text": "Choose top and rear fan adaptors. The diagram and price update with your selection."
           }
         },
         "quantity_selector": {
