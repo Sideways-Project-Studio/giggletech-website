@@ -1,0 +1,481 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_YTAMEn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QTAMxa": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>Sound Claw</h1>",
+            "heading_size": "h0"
+          }
+        },
+        "text_EqfghD": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>Created with a love of riding, and music. Secure when riding, easy to remove when you're done.</h4>"
+          }
+        },
+        "button_6tmM7d": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QTAMxa",
+        "text_EqfghD",
+        "button_6tmM7d"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "image_banner_3JVj3j": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_JiDg9V": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Sound Claw",
+            "heading_size": "h1"
+          }
+        },
+        "text_yUQBcw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Created with a love of riding, and music. Secure when riding, easy to remove when you're done.",
+            "text_style": "body"
+          }
+        },
+        "buttons_ezpX93": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JiDg9V",
+        "text_yUQBcw",
+        "buttons_ezpX93"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/PXL_20231102_213428375.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_with_text_aA6mxP": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_x8Wfzf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Style",
+            "heading_size": "h1"
+          }
+        },
+        "text_TWgRaj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Secure when riding, grips it tight. Easy to remove when you done with your ride, or locking it up at the shops</p>",
+            "text_style": "body"
+          }
+        },
+        "button_jUndPg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_x8Wfzf",
+        "text_TWgRaj",
+        "button_jUndPg"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/PXL_20231105_061802669.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_NJKUBU": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DKWae8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_3n3JXb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_9pDBYC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_DKWae8",
+        "text_3n3JXb",
+        "button_9pDBYC"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/PXL_20231102_212656071.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_N7xHQM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TfkGWc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Music + Riding</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_CCb3Az": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For those who love riding and singing along to their favorite tunes, I created The Sound Claw.<br/><br/>It’s stylish, durable, and easy-to-use holder for your UE BOOM speaker that lets you take your music wherever you go. <br/><br/>The Sound Claw secures your speaker to your bike and makes it easy to remove when your bike is locked.</p>"
+          }
+        },
+        "button_DztCGM": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TfkGWc",
+        "text_CCb3Az",
+        "button_DztCGM"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_size": "h1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "product-rating": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "8a866a3a-d489-4d64-84d9-44daf182d08a": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Specs",
+            "icon": "lightning_bolt",
+            "content": "<p></p><ul><li>Dimension: 70mm x 70mm x 35mm [2.75\" x 2.75\" x 1.2\"]</li><li>Weight 95g / 3.35oz</li><li> Prosthetic Grade Silicone Interface</li><li>WiFi Connectivity</li><li>USB-C Powered</li><li>12hr life when run from 1000mAh battery</li></ul>",
+            "page": ""
+          }
+        },
+        "61453d5f-79dd-492e-8282-459e611e76ab": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Requirements",
+            "icon": "check_mark",
+            "content": "<ul><li>GiggleTech OSC Router [<a href=\"https://github.com/giggletech/GiggleTech_OSC_Router/releases\" target=\"_blank\" title=\"https://github.com/giggletech/GiggleTech_OSC_Router/releases\">download]</a></li><li>USB power source [Valve Index or battery bank]</li><li>PC VR</li><li>WiFi network</li><li>VRChat</li></ul>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "product-rating",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "8a866a3a-d489-4d64-84d9-44daf182d08a",
+        "61453d5f-79dd-492e-8282-459e611e76ab",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "thumbnail",
+        "media_size": "medium",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "edc3a255-1850-4328-b1bf-ae1c0ee68b26": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17365333016853__edc3a255-1850-4328-b1bf-ae1c0ee68b26-16806660523b43ab6c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Join the <a href=\"https://discord.com/invite/fBhVGmx4yK\" target=\"_blank\" title=\"https://discord.com/invite/fBhVGmx4yK\">Discord</a></p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--17365333016853__edc3a255-1850-4328-b1bf-ae1c0ee68b26-16806660523b43ab6c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ask questions, access software and say hello!</p>"
+          }
+        },
+        "template--17365333016853__edc3a255-1850-4328-b1bf-ae1c0ee68b26-16806660523b43ab6c-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17365333016853__edc3a255-1850-4328-b1bf-ae1c0ee68b26-16806660523b43ab6c-0",
+        "template--17365333016853__edc3a255-1850-4328-b1bf-ae1c0ee68b26-16806660523b43ab6c-1",
+        "template--17365333016853__edc3a255-1850-4328-b1bf-ae1c0ee68b26-16806660523b43ab6c-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_kTrzKj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cqJmtJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>About Sound Claw</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_BmRW3n": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I'm an engineer with a passion for both function and design. Besides creating the Sound Claw, I also run Giggletech, where I develop innovative products for VR. The Sound Claw is my latest venture, and I'm thrilled to share it with you. Thank you for taking the time to learn about it! Once there's enough demand, I plan to launch a dedicated website for the Sound Claw. Until then, happy riding!</p><p>Your support means a lot to me. If you like the Sound Claw, please share it with your friends and colleagues. As an indie developer, your help truly means the world.</p>"
+          }
+        },
+        "button_pwMrTE": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cqJmtJ",
+        "text_BmRW3n",
+        "button_pwMrTE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_9cxXQe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QjQwmN": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Sound Claw Socials</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_HGYiLh": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/><a href=\"https://www.instagram.com/sound.claw/\" target=\"_blank\" title=\"https://www.instagram.com/sound.claw/\">Instagram</a><br/><a href=\"https://www.tiktok.com/@sound.claw\" title=\"https://www.tiktok.com/@sound.claw\">TikTok<br/><br/></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QjQwmN",
+        "text_HGYiLh"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "rich_text_YTAMEn",
+    "image_banner_3JVj3j",
+    "image_with_text_aA6mxP",
+    "image_with_text_NJKUBU",
+    "rich_text_N7xHQM",
+    "product-recommendations",
+    "main",
+    "edc3a255-1850-4328-b1bf-ae1c0ee68b26",
+    "rich_text_kTrzKj",
+    "rich_text_9cxXQe"
+  ]
+}

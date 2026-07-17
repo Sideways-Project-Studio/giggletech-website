@@ -1,0 +1,1077 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_7nBb7k": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_PqPMcA": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_banxUJ": {
+          "type": "text",
+          "settings": {
+            "text": "Headpats and more :3",
+            "text_style": "body"
+          }
+        },
+        "buttons_7JMMKj": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PqPMcA",
+        "text_banxUJ",
+        "buttons_7JMMKj"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Giggletech_Banner_No_Caption.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_w7iQBD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hAEMXA": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "hxl"
+          }
+        },
+        "text_Q34cQr": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>😁😈😵</h1>"
+          }
+        },
+        "button_3yUCW3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hAEMXA",
+        "text_Q34cQr",
+        "button_3yUCW3"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_kAyYR7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EpfrHD": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Talk about your brand</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_FECWGm": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Australia has resumed shipping to the USA.</h3><h3>Due to new US import tariffs, we have also had to increase the price of the Gigglepuck.</h3><h3>We appreciate your understanding.</h3>"
+          }
+        },
+        "button_69TdBt": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EpfrHD",
+        "text_FECWGm",
+        "button_69TdBt"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_KHDhjM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3nWaYc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Giggletech Update</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_nVJJjm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Giggletech now offers adult toys in addition to the VR haptic range</p>"
+          }
+        },
+        "button_nAzk9C": {
+          "type": "button",
+          "settings": {
+            "button_label": "I want to see and I am 18+",
+            "button_link": "shopify://products/giggle-snake",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_gYDRcm": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><br/>Continue below for Headpats and Haptics    ❤️🥰❤️</h3>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3nWaYc",
+        "text_nVJJjm",
+        "button_nAzk9C",
+        "text_gYDRcm"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_8dCFJy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UqPUWi": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_4fL9Aj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_7PHaPK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UqPUWi",
+        "text_4fL9Aj",
+        "button_7PHaPK"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_x9rXnf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bTmkPc": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Talk about your brand</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_P4Bwtr": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_RxqQAm": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bTmkPc",
+        "text_P4Bwtr",
+        "button_RxqQAm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "c4e6048b-cb32-42e1-b185-e485c4af141f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17365333049621__c4e6048b-cb32-42e1-b185-e485c4af141f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--17365333049621__c4e6048b-cb32-42e1-b185-e485c4af141f-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><em><br/>Kindly take note that at the moment we are facing an inventory shortage. But worry not! You can still place a Pre-Order and we will replenish our stock once the Lunar New Year celebration is over. Additional details can be found on our discord (Link Above).<br/></em></p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365333049621__c4e6048b-cb32-42e1-b185-e485c4af141f-heading-1",
+        "template--17365333049621__c4e6048b-cb32-42e1-b185-e485c4af141f-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_cxpXaV": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_MbGQKf": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_8FnQpA": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_iLCqGK": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MbGQKf",
+        "text_8FnQpA",
+        "buttons_iLCqGK"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/PXL_20241111_222503511.MP.jpg",
+        "image_2": "shopify://shop_images/PXL_20240531_024504515_def66d83-c2bd-49f7-b335-e302d25d3dba.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_U8Nwtr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Fr7gne": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Head Pat Haptics</p>",
+            "heading_size": "hxl"
+          }
+        },
+        "text_GEfijE": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Get headpats, demand them if necessary.</p>"
+          }
+        },
+        "button_8XiFkd": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Fr7gne",
+        "text_GEfijE",
+        "button_8XiFkd"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_yATNpJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UNrWbF": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Talk about your brand</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_AqNNYx": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_MnWxKG": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UNrWbF",
+        "text_AqNNYx",
+        "button_MnWxKG"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "a158cbfa-3a59-4ba5-8687-489645524478": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-2": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-3": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-4": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-6": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "6c3c477b-f24b-4889-ab74-e3685ee51805": {
+          "type": "text",
+          "settings": {
+            "text": "Get your Headpat Haptics here! VRChat ready. Made with squishy silicone for your enjoyment 🥰",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-0",
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-1",
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-2",
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-3",
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-4",
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-5",
+        "template--17365333049621__a158cbfa-3a59-4ba5-8687-489645524478-1689661993053f88ef-6",
+        "6c3c477b-f24b-4889-ab74-e3685ee51805"
+      ],
+      "settings": {
+        "product": "giggle_puck",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "image_with_text_PR6Kh9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_46DVGh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Place Them Anywhere",
+            "heading_size": "h0"
+          }
+        },
+        "text_ErMRwr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All our products are modular, strap them any where on the body<br/><br/>Headpats, belly rubs, two on the chest, and tail.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_xx44fF": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_46DVGh",
+        "text_ErMRwr",
+        "button_xx44fF"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/PXL_20240531_024633779_24eec53f-028e-4162-8850-701375518ffc.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+    "2dc63360-c57e-4b85-8bc7-b948a4ee1df6": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h0"
+          }
+        },
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-price-1": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-variant_picker-1": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-quantity_selector-1": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "7e5734d8-59aa-4997-bf4d-4138db9b6662": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Introducing the Giggle Spark ⚡",
+            "text_style": "body"
+          }
+        },
+        "da4b3dd4-d02d-4c46-a421-06a1680ac554": {
+          "type": "text",
+          "settings": {
+            "text": "Compact and lightweight, the Giggle Spark is perfect to strap to where you want. Two for the chest, legs,  belly rubs, or your tail 😸",
+            "text_style": "body"
+          }
+        },
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-share-1": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-text-1",
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-title-1",
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-price-1",
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-variant_picker-1",
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-quantity_selector-1",
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-buy_buttons-1",
+        "7e5734d8-59aa-4997-bf4d-4138db9b6662",
+        "da4b3dd4-d02d-4c46-a421-06a1680ac554",
+        "template--17365333049621__2dc63360-c57e-4b85-8bc7-b948a4ee1df6-share-1"
+      ],
+      "settings": {
+        "product": "giggle-spark",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "right",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "6fb35a88-a237-449c-95a8-fe59a756723e": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-price-1": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-variant_picker-1": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "6e73cff2-4a29-4cf2-88c4-691154f6705c": {
+          "type": "text",
+          "settings": {
+            "text": "USB-C Power supply for your VR gear. The Giggle Bank is small and compact for you to strap it anywhere⚡ ",
+            "text_style": "body"
+          }
+        },
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-share-1": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-text-1",
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-title-1",
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-price-1",
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-variant_picker-1",
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-quantity_selector-1",
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-buy_buttons-1",
+        "6e73cff2-4a29-4cf2-88c4-691154f6705c",
+        "template--17365333049621__6fb35a88-a237-449c-95a8-fe59a756723e-share-1"
+      ],
+      "settings": {
+        "product": "giggle-bank",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_QL7Qhb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_97RwpR": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Strap Packs</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_3JXacf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Giggle Spark and Gigglebank Combination. Add a combo thing. Just show all the things you can add. <br/><br/>Spark + Bank, USB Cables, small and large</p>"
+          }
+        },
+        "button_ER9TyG": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_97RwpR",
+        "text_3JXacf",
+        "button_ER9TyG"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "featured_product_fj8mbi": {
+      "type": "featured-product",
+      "blocks": {
+        "text_C9NxDc": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_tdcYaL": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_H9re7p": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_picYVt": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_mr7zeX": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_j7YExy": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share_hcnMEQ": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "text_UwDrXW": {
+          "type": "text",
+          "settings": {
+            "text": "Combo Packs for the Giggle Spark and Giggle Bank. Comes with straps so you can   strap them to your chest, your legs, or tail 😄",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_C9NxDc",
+        "title_tdcYaL",
+        "price_H9re7p",
+        "variant_picker_picYVt",
+        "quantity_selector_mr7zeX",
+        "buy_buttons_j7YExy",
+        "share_hcnMEQ",
+        "text_UwDrXW"
+      ],
+      "settings": {
+        "product": "giggle-strap-pack",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "right",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f6a56131-f1e9-4d8d-9da6-f41f7627c43b": {
+      "type": "video",
+      "settings": {
+        "heading": "Testimonials",
+        "heading_size": "h1",
+        "cover_image": "shopify://shop_images/gigglepuck_club.png",
+        "video_url": "https://www.youtube.com/watch?v=IgJySmG4G78",
+        "description": "Listen to happy GigglePuck Owners",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "3fec68ca-0c8a-4614-8800-6d9223548dfc": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17365333049621__3fec68ca-0c8a-4614-8800-6d9223548dfc-16747870468e373531-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "OSC Router",
+            "heading_size": "h1"
+          }
+        },
+        "template--17365333049621__3fec68ca-0c8a-4614-8800-6d9223548dfc-16747870468e373531-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Giggle Tech OSC Router makes controlling your hardware a breeze.</p><p>Quick setup for seamless hardware control. No fuss, just fun!</p><p>Get the router <a href=\"https://github.com/giggletech/GiggleTech_OSC_Router/releases\" target=\"_blank\" title=\"https://github.com/giggletech/GiggleTech_OSC_Router/releases\">[Here</a>]</p>",
+            "text_style": "body"
+          }
+        },
+        "a7414050-2759-47e7-90b2-32b003a8eb83": {
+          "type": "button",
+          "settings": {
+            "button_label": "Getting Started",
+            "button_link": "shopify://pages/getting-stared"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365333049621__3fec68ca-0c8a-4614-8800-6d9223548dfc-16747870468e373531-0",
+        "template--17365333049621__3fec68ca-0c8a-4614-8800-6d9223548dfc-16747870468e373531-1",
+        "a7414050-2759-47e7-90b2-32b003a8eb83"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Router_OSC_Website_v2.0.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b2c9ca42-b6b4-4397-8bf9-634781f64df2": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17365333049621__b2c9ca42-b6b4-4397-8bf9-634781f64df2-16747870468e373531-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Giggle Tech",
+            "heading_size": "h1"
+          }
+        },
+        "template--17365333049621__b2c9ca42-b6b4-4397-8bf9-634781f64df2-16747870468e373531-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At GiggleTech, we believe that virtual reality should be a fun and <br/>joyful experience for everyone. That's why we specialize in creating <br/>easy-to-use accessories that enhance your VR experience.</p><p>Created out of a passion for virtual reality, and a desire to make products that people love to use. <br/><br/>We started GiggleTech because of our passion for virtual reality and a commitment to designing products that people love to use. We want to bridge the gap between Virtual Reality and Real life by crafting novel, cutting edge solutions that innovate in the VR consumer product market.</p><p>We are dedicated to constantly improving and innovating, so your feedback is super important to us.</p><p>Thanks for choosing GiggleTech. We can't wait to be a part of your VR adventures!</p>",
+            "text_style": "body"
+          }
+        },
+        "template--17365333049621__b2c9ca42-b6b4-4397-8bf9-634781f64df2-16747870468e373531-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify://collections/haptics"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365333049621__b2c9ca42-b6b4-4397-8bf9-634781f64df2-16747870468e373531-0",
+        "template--17365333049621__b2c9ca42-b6b4-4397-8bf9-634781f64df2-16747870468e373531-1",
+        "template--17365333049621__b2c9ca42-b6b4-4397-8bf9-634781f64df2-16747870468e373531-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/index.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_PwQUig": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_r3FhTK": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Giggletech </p>",
+            "heading_size": "h0"
+          }
+        },
+        "text_dfAFH8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_BKteB6": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/haptics",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_r3FhTK",
+        "text_dfAFH8",
+        "button_BKteB6"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "836650fa-6e84-45e2-b4a7-d5401d17f7b6": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17365333049621__836650fa-6e84-45e2-b4a7-d5401d17f7b6-16806660523b43ab6c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Join our <a href=\"https://discord.com/invite/fBhVGmx4yK\" target=\"_blank\" title=\"https://discord.com/invite/fBhVGmx4yK\">Discord</a></p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--17365333049621__836650fa-6e84-45e2-b4a7-d5401d17f7b6-16806660523b43ab6c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ask questions, access software and hang out with other GiggleTech users</p>"
+          }
+        },
+        "template--17365333049621__836650fa-6e84-45e2-b4a7-d5401d17f7b6-16806660523b43ab6c-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17365333049621__836650fa-6e84-45e2-b4a7-d5401d17f7b6-16806660523b43ab6c-0",
+        "template--17365333049621__836650fa-6e84-45e2-b4a7-d5401d17f7b6-16806660523b43ab6c-1",
+        "template--17365333049621__836650fa-6e84-45e2-b4a7-d5401d17f7b6-16806660523b43ab6c-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "image_banner_7nBb7k",
+    "rich_text_w7iQBD",
+    "rich_text_kAyYR7",
+    "rich_text_KHDhjM",
+    "rich_text_8dCFJy",
+    "rich_text_x9rXnf",
+    "c4e6048b-cb32-42e1-b185-e485c4af141f",
+    "image_banner_cxpXaV",
+    "rich_text_U8Nwtr",
+    "rich_text_yATNpJ",
+    "a158cbfa-3a59-4ba5-8687-489645524478",
+    "image_with_text_PR6Kh9",
+    "2dc63360-c57e-4b85-8bc7-b948a4ee1df6",
+    "6fb35a88-a237-449c-95a8-fe59a756723e",
+    "rich_text_QL7Qhb",
+    "featured_product_fj8mbi",
+    "f6a56131-f1e9-4d8d-9da6-f41f7627c43b",
+    "3fec68ca-0c8a-4614-8800-6d9223548dfc",
+    "b2c9ca42-b6b4-4397-8bf9-634781f64df2",
+    "rich_text_PwQUig",
+    "836650fa-6e84-45e2-b4a7-d5401d17f7b6"
+  ]
+}

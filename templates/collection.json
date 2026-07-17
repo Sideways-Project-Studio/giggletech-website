@@ -1,0 +1,351 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "f2cc6df0-3993-4044-b959-dc365cc523ed": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-2": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-4": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "d7a344f6-414b-42c5-b45a-920d03ff7085": {
+          "type": "text",
+          "settings": {
+            "text": "Feel more with our VRChat Ready Haptics. Simple and easy to use, enjoy headpats, belly rubs, or any sensation you can imagine!",
+            "text_style": "body"
+          }
+        },
+        "ca53b809-97f7-4f60-92fb-d0a3542e72b5": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-6": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-0",
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-1",
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-2",
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-3",
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-4",
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-5",
+        "d7a344f6-414b-42c5-b45a-920d03ff7085",
+        "ca53b809-97f7-4f60-92fb-d0a3542e72b5",
+        "template--17365332984085__f2cc6df0-3993-4044-b959-dc365cc523ed-1689661993053f88ef-6"
+      ],
+      "settings": {
+        "product": "giggle_puck",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8e90f88e-3b68-4ac5-8ad2-a134575fab23": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-2": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-4": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "4b39bbb3-961e-46fd-ab2f-2774bba0d486": {
+          "type": "text",
+          "settings": {
+            "text": "Introducing the Giggle Spark ⚡",
+            "text_style": "body"
+          }
+        },
+        "60e72d76-7030-4189-96bc-e7055a306f13": {
+          "type": "text",
+          "settings": {
+            "text": "With an updated strap design, and a smaller, lighter weight form factor, experience the same heartwarming affection of virtual cuddles at an irresistibly affordable price.",
+            "text_style": "body"
+          }
+        },
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-6": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-0",
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-1",
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-2",
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-3",
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-4",
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-5",
+        "4b39bbb3-961e-46fd-ab2f-2774bba0d486",
+        "60e72d76-7030-4189-96bc-e7055a306f13",
+        "template--17365332984085__8e90f88e-3b68-4ac5-8ad2-a134575fab23-1689661993053f88ef-6"
+      ],
+      "settings": {
+        "product": "giggle-spark",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "67b6f59b-2660-41ea-9f83-b02fb3665cbf": {
+      "type": "featured-product",
+      "blocks": {
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-price-1": {
+          "type": "price",
+          "settings": {}
+        },
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "26158ab3-d930-43df-af41-a9aef5dc0c76": {
+          "type": "text",
+          "settings": {
+            "text": "Energize your haptics, charge your controllers, and stay fully immersed in your virtual world with this compact, VR-ready battery bank. Power On! ⚡",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-text-1",
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-title-1",
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-price-1",
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-variant_picker-1",
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-quantity_selector-1",
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-buy_buttons-1",
+        "template--17365332984085__67b6f59b-2660-41ea-9f83-b02fb3665cbf-share-1",
+        "26158ab3-d930-43df-af41-a9aef5dc0c76"
+      ],
+      "settings": {
+        "product": "giggle-bank",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 8,
+        "columns_desktop": 2,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_product_WMfaJf": {
+      "type": "featured-product",
+      "blocks": {
+        "text_HKK3p8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_ekjwdh": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_LaXCBn": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_fgeqQW": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_n9mnYb": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_RyLQp6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "text_qkkqrF": {
+          "type": "text",
+          "settings": {
+            "text": "The Giggle Strap Pack lets you experience sensations wherever you want, whether on your chest, thighs, or any other area you desire. Included: Strap, Giggle Spark, Giggle Bank, USB-C",
+            "text_style": "body"
+          }
+        },
+        "share_4Wi7ni": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_HKK3p8",
+        "title_ekjwdh",
+        "price_LaXCBn",
+        "variant_picker_fgeqQW",
+        "quantity_selector_n9mnYb",
+        "buy_buttons_RyLQp6",
+        "text_qkkqrF",
+        "share_4Wi7ni"
+      ],
+      "settings": {
+        "product": "giggle-strap-pack",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "f2cc6df0-3993-4044-b959-dc365cc523ed",
+    "8e90f88e-3b68-4ac5-8ad2-a134575fab23",
+    "67b6f59b-2660-41ea-9f83-b02fb3665cbf",
+    "product-grid",
+    "featured_product_WMfaJf"
+  ]
+}

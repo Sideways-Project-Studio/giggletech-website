@@ -1,0 +1,277 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_zk4YdL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EAwXpw": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Little Brother</p>",
+            "heading_size": "hxl"
+          }
+        },
+        "text_KHNrUb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Helping you towards a happier life</p>"
+          }
+        },
+        "button_EnpHJ9": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EAwXpw",
+        "text_KHNrUb",
+        "button_EnpHJ9"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_dKGrQg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TkChjL": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Get the App</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_a3aYER": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>Get the App</strong></p>"
+          }
+        },
+        "button_kwxVXd": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Here",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TkChjL",
+        "text_a3aYER",
+        "button_kwxVXd"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_aq4wrb": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HdqyzA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Helping you",
+            "heading_size": "h1"
+          }
+        },
+        "text_Q8rma8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your Little Brother is looking out for you, and will send you reports at the end of the day.</p><p>No need to do anything more, simply go about your day. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_JghyfJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get the App",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_HdqyzA",
+        "text_Q8rma8",
+        "button_JghyfJ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/eb861d73-11ef-4c08-a15b-42f88c38c2be.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_tfcKBY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_99z7cq": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Step 2</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_MwyAdK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Go about your day</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_99z7cq",
+        "text_MwyAdK"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_iGbFTe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fcK9wk": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Reports</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_3FnVEM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your Little Brother will help uncover areas for personal development, empowering you to become a better version of yourself over time.</p><p></p>"
+          }
+        },
+        "button_qH9n7d": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Find our More",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fcK9wk",
+        "text_3FnVEM",
+        "button_qH9n7d"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_A9kMeH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xyjCXp": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>How it Works</p><p></p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_fWhE9L": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your Little Brother operates in the background, looking at how the users interacts with the world.<br/><br/>Little Brother then generates reports based on this information, highlighting both the challenging and productive behaviors.<br/></p><p>Awareness of challenging thoughts help us make positive changes for a fullfiling and happier life.<br/><br/></p>"
+          }
+        },
+        "button_gnNYm4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find our more",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xyjCXp",
+        "text_fWhE9L",
+        "button_gnNYm4"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_zk4YdL",
+    "rich_text_dKGrQg",
+    "image_with_text_aq4wrb",
+    "rich_text_tfcKBY",
+    "rich_text_iGbFTe",
+    "rich_text_A9kMeH"
+  ]
+}

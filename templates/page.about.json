@@ -1,0 +1,61 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "8e99339d-d9e8-4edd-8ffa-46e583c651e0": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17365332885781__8e99339d-d9e8-4edd-8ffa-46e583c651e0-16752200334940d89d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us",
+            "heading_size": "h1"
+          }
+        },
+        "template--17365332885781__8e99339d-d9e8-4edd-8ffa-46e583c651e0-16752200334940d89d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Yo! I like making things for you to enjoy! I believe in being as sustainable as I can be as an indie maker. As such, all measures use as much recyclable material as possible. We use recycled cardboard and biodegradable packing tape. Products and services are designed to have a long service life and are not consumable items. Come say hi in the Discord! Link in the banner.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17365332885781__8e99339d-d9e8-4edd-8ffa-46e583c651e0-16752200334940d89d-0",
+        "template--17365332885781__8e99339d-d9e8-4edd-8ffa-46e583c651e0-16752200334940d89d-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/index.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8e99339d-d9e8-4edd-8ffa-46e583c651e0"
+  ]
+}

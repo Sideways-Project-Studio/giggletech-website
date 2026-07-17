@@ -1,0 +1,236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_zk4YdL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EAwXpw": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Getting Started</p>",
+            "heading_size": "hxl"
+          }
+        },
+        "text_KHNrUb": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Lets run through setup getting started with your GigglePuck and/or your Giggle Spark</p>"
+          }
+        },
+        "button_EnpHJ9": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EAwXpw",
+        "text_KHNrUb",
+        "button_EnpHJ9"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_DYyDfa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kFA3X4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Step 1: Get your 18350</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_9MTzfG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover where to find 18350 batteries and the various types available on the Giggletech Discord.</p>"
+          }
+        },
+        "text_rjrEwr": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_rbxNiy": {
+          "type": "button",
+          "settings": {
+            "button_label": "Link to Discord Battery Selection",
+            "button_link": "https://discord.com/channels/1067914621425553458/1167322462036443198",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kFA3X4",
+        "text_9MTzfG",
+        "text_rjrEwr",
+        "button_rbxNiy"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_JByX3M": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jGGjVx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Installation",
+            "heading_size": "h1"
+          }
+        },
+        "text_d67BzP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It's essential to correctly install your battery to prevent Gigglebank damage. Reach out to Giggletech for support through email or Discord.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_txPci8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Join the Discord",
+            "button_link": "https://discord.com/invite/fBhVGmx4yK"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jGGjVx",
+        "text_d67BzP",
+        "button_txPci8"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/GiggleBank_Warning_2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_raz6PY": {
+      "type": "video",
+      "settings": {
+        "heading": "Step 2: Battery Installation",
+        "heading_size": "h1",
+        "cover_image": "shopify://shop_images/Gigglebank_splash.png",
+        "video_url": "https://youtu.be/y_mSPkfOkwg?si=5ROtuKPWmUIkifP9",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_ykLNFF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LB4MCW": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Step 3: Done!</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LB4MCW"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "51c242cd-ad04-48d5-a9d9-21366fcf5473": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18494289084693__51c242cd-ad04-48d5-a9d9-21366fcf5473-1680639438679e9eaf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Join the <a href=\"https://discord.com/invite/fBhVGmx4yK\" target=\"_blank\" title=\"https://discord.com/invite/fBhVGmx4yK\">Discord</a></p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18494289084693__51c242cd-ad04-48d5-a9d9-21366fcf5473-1680639438679e9eaf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Say hi, access advanced settings, and receive friendly assistance</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18494289084693__51c242cd-ad04-48d5-a9d9-21366fcf5473-1680639438679e9eaf-0",
+        "template--18494289084693__51c242cd-ad04-48d5-a9d9-21366fcf5473-1680639438679e9eaf-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_zk4YdL",
+    "rich_text_DYyDfa",
+    "image_with_text_JByX3M",
+    "video_raz6PY",
+    "rich_text_ykLNFF",
+    "51c242cd-ad04-48d5-a9d9-21366fcf5473"
+  ]
+}
