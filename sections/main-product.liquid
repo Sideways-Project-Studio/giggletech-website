@@ -595,60 +595,218 @@
                   <p class="vent-kit-picker__helper">{{ block.settings.helper_text | escape }}</p>
                 {%- endif -%}
 
-                <div class="vent-kit-picker__diagram">
-                  <img
-                    class="vent-kit-picker__image"
-                    data-vent-kit-image
-                    src="{{ '1R.png' | asset_url }}"
-                    alt="{{ block.settings.heading | default: product.title | escape }}"
-                    width="1200"
-                    height="900"
-                    loading="lazy"
-                  >
-                  <p class="vent-kit-picker__diagram-empty caption" data-vent-kit-empty hidden>
-                    Select top and rear options to preview your kit.
-                  </p>
+                <div class="vent-kit-picker__step">
+                  <h3 class="vent-kit-picker__step-title">
+                    <span class="vent-kit-picker__step-number">STEP 1</span>
+                    What fans?
+                  </h3>
+
+                  <div class="vent-kit-picker__diagram">
+                    <img
+                      class="vent-kit-picker__image"
+                      data-vent-kit-image
+                      src="{{ '1R.png' | asset_url }}"
+                      alt="{{ block.settings.heading | default: product.title | escape }}"
+                      width="1200"
+                      height="900"
+                      loading="lazy"
+                    >
+                    <p class="vent-kit-picker__diagram-empty caption" data-vent-kit-empty hidden>
+                      Select top and rear options to preview your kit.
+                    </p>
+                  </div>
+
+                  <fieldset class="vent-kit-picker__group">
+                    <legend class="form__label">Top Fans</legend>
+                    <div class="vent-kit-picker__choices">
+                      <label class="vent-kit-picker__choice">
+                        <input type="radio" name="vent-kit-top-{{ section.id }}" value="1" data-vent-top>
+                        <span>1</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input type="radio" name="vent-kit-top-{{ section.id }}" value="2" data-vent-top>
+                        <span>2</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input type="radio" name="vent-kit-top-{{ section.id }}" value="3" data-vent-top>
+                        <span>3</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input type="radio" name="vent-kit-top-{{ section.id }}" value="None" data-vent-top checked>
+                        <span>None</span>
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <fieldset class="vent-kit-picker__group">
+                    <legend class="form__label">Rear Fans</legend>
+                    <div class="vent-kit-picker__choices">
+                      <label class="vent-kit-picker__choice">
+                        <input type="radio" name="vent-kit-rear-{{ section.id }}" value="1" data-vent-rear checked>
+                        <span>1</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input type="radio" name="vent-kit-rear-{{ section.id }}" value="1 + PSU" data-vent-rear>
+                        <span>1 + PSU</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input type="radio" name="vent-kit-rear-{{ section.id }}" value="None" data-vent-rear>
+                        <span>None</span>
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <div class="vent-kit-picker__psu-gap" data-vent-psu-gap hidden>
+                    <p class="form__label">Please confirm clearance</p>
+                    <p class="vent-kit-picker__helper vent-kit-picker__helper--inline">
+                      Confirm the distance between your <strong>Rear Fan</strong> and
+                      <strong>GPU / monitor cables</strong>. This kit is designed for a gap of
+                      <strong>30mm (1.5") to 80mm (3")</strong>. I can customise the length if needed.
+                    </p>
+                    <div class="vent-kit-picker__choices">
+                      <label class="vent-kit-picker__choice">
+                        <input
+                          type="radio"
+                          name="properties[PSU clearance]"
+                          value="Fits standard gap (30–80mm)"
+                          form="{{ product_form_id }}"
+                          data-vent-psu-clearance
+                          checked
+                          disabled
+                        >
+                        <span>Fits standard gap</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input
+                          type="radio"
+                          name="properties[PSU clearance]"
+                          value="Customise length"
+                          form="{{ product_form_id }}"
+                          data-vent-psu-clearance
+                          disabled
+                        >
+                        <span>Customise length</span>
+                      </label>
+                    </div>
+
+                    <div class="vent-kit-picker__psu-custom" data-vent-psu-custom hidden>
+                      <label class="form__label" for="VentKit-psu-length-{{ section.id }}">
+                        Custom length
+                      </label>
+                      <p class="vent-kit-picker__helper vent-kit-picker__helper--inline">
+                        Tell us the gap you need between the rear fan and GPU / monitor cables.
+                      </p>
+                      <input
+                        id="VentKit-psu-length-{{ section.id }}"
+                        class="field__input vent-kit-picker__text-input"
+                        type="text"
+                        name="properties[Custom PSU length]"
+                        form="{{ product_form_id }}"
+                        maxlength="120"
+                        placeholder="Example: 100mm / 4 inch gap needed"
+                        data-vent-psu-length
+                        disabled
+                      >
+                    </div>
+                  </div>
                 </div>
 
-                <fieldset class="vent-kit-picker__group">
-                  <legend class="form__label">Top Fans</legend>
-                  <div class="vent-kit-picker__choices">
-                    <label class="vent-kit-picker__choice">
-                      <input type="radio" name="vent-kit-top-{{ section.id }}" value="1" data-vent-top>
-                      <span>1</span>
-                    </label>
-                    <label class="vent-kit-picker__choice">
-                      <input type="radio" name="vent-kit-top-{{ section.id }}" value="2" data-vent-top>
-                      <span>2</span>
-                    </label>
-                    <label class="vent-kit-picker__choice">
-                      <input type="radio" name="vent-kit-top-{{ section.id }}" value="3" data-vent-top>
-                      <span>3</span>
-                    </label>
-                    <label class="vent-kit-picker__choice">
-                      <input type="radio" name="vent-kit-top-{{ section.id }}" value="None" data-vent-top checked>
-                      <span>None</span>
-                    </label>
-                  </div>
-                </fieldset>
+                <div class="vent-kit-picker__step">
+                  <h3 class="vent-kit-picker__step-title">
+                    <span class="vent-kit-picker__step-number">STEP 2</span>
+                    What color?
+                  </h3>
 
-                <fieldset class="vent-kit-picker__group">
-                  <legend class="form__label">Rear Fans</legend>
-                  <div class="vent-kit-picker__choices">
-                    <label class="vent-kit-picker__choice">
-                      <input type="radio" name="vent-kit-rear-{{ section.id }}" value="1" data-vent-rear checked>
-                      <span>1</span>
-                    </label>
-                    <label class="vent-kit-picker__choice">
-                      <input type="radio" name="vent-kit-rear-{{ section.id }}" value="1 + PSU" data-vent-rear>
-                      <span>1 + PSU</span>
-                    </label>
-                    <label class="vent-kit-picker__choice">
-                      <input type="radio" name="vent-kit-rear-{{ section.id }}" value="None" data-vent-rear>
-                      <span>None</span>
-                    </label>
-                  </div>
-                </fieldset>
+                  <fieldset class="vent-kit-picker__group">
+                    <legend class="visually-hidden">Color</legend>
+                    <p class="vent-kit-picker__helper vent-kit-picker__helper--inline">
+                      Adds a note on your order so we print the right color. Does not change the price.
+                    </p>
+                    <div class="vent-kit-picker__choices">
+                      <label class="vent-kit-picker__choice">
+                        <input
+                          type="radio"
+                          name="properties[Color]"
+                          value="Black"
+                          form="{{ product_form_id }}"
+                          data-vent-color
+                          checked
+                        >
+                        <span>Black</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input
+                          type="radio"
+                          name="properties[Color]"
+                          value="Green"
+                          form="{{ product_form_id }}"
+                          data-vent-color
+                        >
+                        <span>Green</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input
+                          type="radio"
+                          name="properties[Color]"
+                          value="Pink"
+                          form="{{ product_form_id }}"
+                          data-vent-color
+                        >
+                        <span>Pink</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input
+                          type="radio"
+                          name="properties[Color]"
+                          value="Blue"
+                          form="{{ product_form_id }}"
+                          data-vent-color
+                        >
+                        <span>Blue</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input
+                          type="radio"
+                          name="properties[Color]"
+                          value="White"
+                          form="{{ product_form_id }}"
+                          data-vent-color
+                        >
+                        <span>White</span>
+                      </label>
+                      <label class="vent-kit-picker__choice">
+                        <input
+                          type="radio"
+                          name="properties[Color]"
+                          value="Two tone"
+                          form="{{ product_form_id }}"
+                          data-vent-color
+                        >
+                        <span>Two tone</span>
+                      </label>
+                    </div>
+
+                    <div class="vent-kit-picker__two-tone" data-vent-two-tone hidden>
+                      <label class="form__label" for="VentKit-two-tone-{{ section.id }}">
+                        Two tone details
+                      </label>
+                      <p class="vent-kit-picker__helper vent-kit-picker__helper--inline">
+                        Tell us which parts should be which color (e.g. top adapters pink, rear duct black).
+                      </p>
+                      <textarea
+                        id="VentKit-two-tone-{{ section.id }}"
+                        class="text-area vent-kit-picker__textarea"
+                        name="properties[Two tone details]"
+                        form="{{ product_form_id }}"
+                        rows="3"
+                        maxlength="500"
+                        placeholder="Example: Top fans green, rear duct + window mount black"
+                        data-vent-two-tone-details
+                        disabled
+                      ></textarea>
+                    </div>
+                  </fieldset>
+                </div>
 
                 <p class="vent-kit-picker__selection caption" data-selection-summary hidden></p>
 

@@ -13,11 +13,26 @@ if (!customElements.get('vent-kit-picker')) {
         this.summary = this.querySelector('[data-selection-summary]');
         this.topInputs = Array.from(this.querySelectorAll('[data-vent-top]'));
         this.rearInputs = Array.from(this.querySelectorAll('[data-vent-rear]'));
+        this.colorInputs = Array.from(this.querySelectorAll('[data-vent-color]'));
+        this.psuClearanceInputs = Array.from(this.querySelectorAll('[data-vent-psu-clearance]'));
+        this.twoToneWrap = this.querySelector('[data-vent-two-tone]');
+        this.twoToneDetails = this.querySelector('[data-vent-two-tone-details]');
+        this.psuGapWrap = this.querySelector('[data-vent-psu-gap]');
+        this.psuCustomWrap = this.querySelector('[data-vent-psu-custom]');
+        this.psuLength = this.querySelector('[data-vent-psu-length]');
         this.imageMap = this.readJson('[data-vent-kit-images]') || {};
         this.optionNames = this.readJson('[data-vent-kit-option-names]') || [];
 
         this.topInputs.forEach((input) => input.addEventListener('change', this.onChange));
         this.rearInputs.forEach((input) => input.addEventListener('change', this.onChange));
+        this.colorInputs.forEach((input) => input.addEventListener('change', this.onChange));
+        this.psuClearanceInputs.forEach((input) => input.addEventListener('change', this.onChange));
+        if (this.twoToneDetails) {
+          this.twoToneDetails.addEventListener('input', this.onChange);
+        }
+        if (this.psuLength) {
+          this.psuLength.addEventListener('input', this.onChange);
+        }
 
         this.syncFromCurrentVariant();
         this.onChange();
@@ -26,6 +41,14 @@ if (!customElements.get('vent-kit-picker')) {
       disconnectedCallback() {
         this.topInputs.forEach((input) => input.removeEventListener('change', this.onChange));
         this.rearInputs.forEach((input) => input.removeEventListener('change', this.onChange));
+        this.colorInputs.forEach((input) => input.removeEventListener('change', this.onChange));
+        this.psuClearanceInputs.forEach((input) => input.removeEventListener('change', this.onChange));
+        if (this.twoToneDetails) {
+          this.twoToneDetails.removeEventListener('input', this.onChange);
+        }
+        if (this.psuLength) {
+          this.psuLength.removeEventListener('input', this.onChange);
+        }
       }
 
       readJson(selector) {
@@ -47,6 +70,61 @@ if (!customElements.get('vent-kit-picker')) {
       getRearValue() {
         const selected = this.rearInputs.find((input) => input.checked);
         return selected ? selected.value : 'None';
+      }
+
+      getColorValue() {
+        const selected = this.colorInputs.find((input) => input.checked);
+        return selected ? selected.value : 'Black';
+      }
+
+      getPsuClearanceValue() {
+        const selected = this.psuClearanceInputs.find((input) => input.checked);
+        return selected ? selected.value : '';
+      }
+
+      wantsCustomPsuLength() {
+        return this.getRearValue() === '1 + PSU' && this.getPsuClearanceValue() === 'Customise length';
+      }
+
+      updateTwoToneField() {
+        const isTwoTone = this.getColorValue() === 'Two tone';
+        if (this.twoToneWrap) this.twoToneWrap.hidden = !isTwoTone;
+        if (this.twoToneDetails) {
+          this.twoToneDetails.disabled = !isTwoTone;
+          if (!isTwoTone) this.twoToneDetails.value = '';
+          this.twoToneDetails.toggleAttribute('required', isTwoTone);
+        }
+      }
+
+      updatePsuGapField() {
+        const showGap = this.getRearValue() === '1 + PSU';
+        if (this.psuGapWrap) this.psuGapWrap.hidden = !showGap;
+
+        this.psuClearanceInputs.forEach((input) => {
+          input.disabled = !showGap;
+        });
+
+        if (!showGap) {
+          const standard = this.psuClearanceInputs.find(
+            (input) => input.value === 'Fits standard gap (30–80mm)'
+          );
+          if (standard) standard.checked = true;
+          if (this.psuCustomWrap) this.psuCustomWrap.hidden = true;
+          if (this.psuLength) {
+            this.psuLength.disabled = true;
+            this.psuLength.value = '';
+            this.psuLength.removeAttribute('required');
+          }
+          return;
+        }
+
+        const customise = this.wantsCustomPsuLength();
+        if (this.psuCustomWrap) this.psuCustomWrap.hidden = !customise;
+        if (this.psuLength) {
+          this.psuLength.disabled = !customise;
+          if (!customise) this.psuLength.value = '';
+          this.psuLength.toggleAttribute('required', customise);
+        }
       }
 
       setRadioValue(inputs, value) {
@@ -112,6 +190,8 @@ if (!customElements.get('vent-kit-picker')) {
 
       onChange() {
         this.enforceNotBothNone();
+        this.updateTwoToneField();
+        this.updatePsuGapField();
         this.updateOptions();
         this.updateDiagram();
         this.updateMasterId();
@@ -122,6 +202,16 @@ if (!customElements.get('vent-kit-picker')) {
 
         if (!this.hasSelection()) {
           this.toggleAddButton(true, 'Select fan options', true);
+          return;
+        }
+
+        if (this.getColorValue() === 'Two tone' && !this.twoToneDetails?.value.trim()) {
+          this.toggleAddButton(true, 'Describe two tone colors', true);
+          return;
+        }
+
+        if (this.wantsCustomPsuLength() && !this.psuLength?.value.trim()) {
+          this.toggleAddButton(true, 'Enter custom length', true);
           return;
         }
 
@@ -203,8 +293,13 @@ if (!customElements.get('vent-kit-picker')) {
 
         const filename = this.getImageFilename();
         this.summary.hidden = false;
+        const color = this.getColorValue();
+        const twoToneNote =
+          color === 'Two tone' && this.twoToneDetails?.value.trim()
+            ? ` (${this.twoToneDetails.value.trim()})`
+            : '';
         this.summary.textContent = filename
-          ? `Selected: Top ${this.options[0]} / Rear ${this.options[1]}`
+          ? `Selected: Top ${this.options[0]} / Rear ${this.options[1]} / Color ${color}${twoToneNote}`
           : 'Select at least one fan option';
       }
 
