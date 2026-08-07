@@ -34,8 +34,8 @@
         "vent_kit_parts": {
           "type": "vent_kit_parts",
           "settings": {
-            "heading": "Select your mount points",
-            "helper_text": "Choose every position that matches your PC case. Price updates with your selection."
+            "heading": "Select a length",
+            "helper_text": "Choose 20 cm, 30 cm, 40 cm, or enter a custom length."
           }
         },
         "quantity_selector": {

@@ -1,6 +1,6 @@
 <section
   id="MainProduct-{{ section.id }}"
-  class="page-width section-{{ section.id }}-padding"
+  class="page-width section-{{ section.id }}-padding{% if template.suffix == 'vent-kit' %} product-page-width--standard{% endif %}"
   data-section="{{ section.id }}"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -16,6 +16,10 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    .product-page-width--standard {
+      max-width: 120rem;
     }
 
     @media screen and (min-width: 750px) {
@@ -585,7 +589,6 @@
               <vent-kit-picker
                 class="vent-kit-picker no-js-hidden"
                 data-section="{{ section.id }}"
-                data-url="{{ product.url }}"
                 {{ block.shopify_attributes }}
               >
                 {%- if block.settings.heading != blank -%}
@@ -595,84 +598,162 @@
                   <p class="vent-kit-picker__helper">{{ block.settings.helper_text | escape }}</p>
                 {%- endif -%}
 
-                <div class="vent-kit-picker__diagram">
-                  {%- assign vent_kit_diagram_alt = block.settings.heading | default: product.title -%}
-                  {%- if block.settings.diagram != blank -%}
-                    {{
-                      block.settings.diagram
-                      | image_url: width: 1200
-                      | image_tag:
-                        loading: 'lazy',
-                        widths: '375, 550, 750, 1100, 1200',
-                        sizes: '(min-width: 750px) 550px, 100vw',
-                        class: 'vent-kit-picker__image',
-                        alt: vent_kit_diagram_alt
-                    }}
-                  {%- else -%}
-                    <img
-                      class="vent-kit-picker__image"
-                      src="{{ 'vent-kit-parts-diagram.png' | asset_url }}"
-                      alt="{{ vent_kit_diagram_alt | escape }}"
-                      width="1200"
-                      height="900"
-                      loading="lazy"
-                    >
-                  {%- endif -%}
-                </div>
-
                 <fieldset class="vent-kit-picker__options">
-                  <legend class="visually-hidden">{{ block.settings.heading | default: 'Select your mount points' | escape }}</legend>
-                  <label class="vent-kit-picker__option" for="VentKit-top-rear-{{ section.id }}">
+                  <legend class="visually-hidden">{{ block.settings.heading | default: 'Select a length' | escape }}</legend>
+                  <label class="vent-kit-picker__option" for="VentKit-length-20-{{ section.id }}">
                     <input
-                      type="checkbox"
-                      id="VentKit-top-rear-{{ section.id }}"
-                      value="top-rear"
-                      data-group="top"
-                      data-part="rear"
+                      type="radio"
+                      id="VentKit-length-20-{{ section.id }}"
+                      name="properties[Length]"
+                      value="20 cm"
+                      form="{{ product_form_id }}"
+                      checked
                     >
-                    <span class="vent-kit-picker__checkbox" aria-hidden="true"></span>
-                    <span class="vent-kit-picker__label">Top rear</span>
+                    <span class="vent-kit-picker__control" aria-hidden="true"></span>
+                    <span class="vent-kit-picker__label">20 cm</span>
                   </label>
-                  <label class="vent-kit-picker__option" for="VentKit-top-front-{{ section.id }}">
+                  <label class="vent-kit-picker__option" for="VentKit-length-30-{{ section.id }}">
                     <input
-                      type="checkbox"
-                      id="VentKit-top-front-{{ section.id }}"
-                      value="top-front"
-                      data-group="top"
-                      data-part="front"
+                      type="radio"
+                      id="VentKit-length-30-{{ section.id }}"
+                      name="properties[Length]"
+                      value="30 cm"
+                      form="{{ product_form_id }}"
                     >
-                    <span class="vent-kit-picker__checkbox" aria-hidden="true"></span>
-                    <span class="vent-kit-picker__label">Top front</span>
+                    <span class="vent-kit-picker__control" aria-hidden="true"></span>
+                    <span class="vent-kit-picker__label">30 cm</span>
                   </label>
-                  <label class="vent-kit-picker__option" for="VentKit-side-upper-{{ section.id }}">
+                  <label class="vent-kit-picker__option" for="VentKit-length-40-{{ section.id }}">
                     <input
-                      type="checkbox"
-                      id="VentKit-side-upper-{{ section.id }}"
-                      value="side-upper"
-                      data-group="side"
-                      data-part="upper"
+                      type="radio"
+                      id="VentKit-length-40-{{ section.id }}"
+                      name="properties[Length]"
+                      value="40 cm"
+                      form="{{ product_form_id }}"
                     >
-                    <span class="vent-kit-picker__checkbox" aria-hidden="true"></span>
-                    <span class="vent-kit-picker__label">Side upper</span>
+                    <span class="vent-kit-picker__control" aria-hidden="true"></span>
+                    <span class="vent-kit-picker__label">40 cm</span>
                   </label>
-                  <label class="vent-kit-picker__option" for="VentKit-side-lower-{{ section.id }}">
+                  <label class="vent-kit-picker__option" for="VentKit-length-custom-{{ section.id }}">
                     <input
-                      type="checkbox"
-                      id="VentKit-side-lower-{{ section.id }}"
-                      value="side-lower"
-                      data-group="side"
-                      data-part="lower"
+                      type="radio"
+                      id="VentKit-length-custom-{{ section.id }}"
+                      name="properties[Length]"
+                      value="Custom"
+                      form="{{ product_form_id }}"
+                      data-custom-length
                     >
-                    <span class="vent-kit-picker__checkbox" aria-hidden="true"></span>
-                    <span class="vent-kit-picker__label">Side lower</span>
+                    <span class="vent-kit-picker__control" aria-hidden="true"></span>
+                    <span class="vent-kit-picker__label">Custom</span>
                   </label>
                 </fieldset>
 
-                <p class="vent-kit-picker__selection caption" data-selection-summary hidden></p>
+                <div class="vent-kit-picker__custom" data-custom-details hidden>
+                  <label class="form__label" for="VentKit-custom-note-{{ section.id }}">Custom length and notes</label>
+                  <textarea
+                    class="text-area field__input"
+                    id="VentKit-custom-note-{{ section.id }}"
+                    name="properties[Custom length and notes]"
+                    form="{{ product_form_id }}"
+                    rows="4"
+                    placeholder="Enter the length you need and any other details"
+                    data-custom-note
+                  ></textarea>
+                  <p class="vent-kit-picker__error caption" data-custom-error hidden>Please enter your custom length.</p>
+                </div>
 
-                <script type="application/json">
-                  {{ product.variants | json }}
-                </script>
+                {%- form 'contact', id: 'VentKitEnquiryForm' -%}
+                  <details
+                    class="vent-kit-picker__enquiry"
+                    {% if form.posted_successfully? or form.errors %}
+                      open
+                    {% endif %}
+                  >
+                    <summary class="button button--secondary">Send an enquiry</summary>
+                    <div class="vent-kit-picker__enquiry-form">
+                      {%- if form.posted_successfully? -%}
+                        <p class="form-status form__message" tabindex="-1" autofocus>
+                          {% render 'icon-success' %}
+                          Thanks! Your enquiry has been sent.
+                        </p>
+                      {%- elsif form.errors -%}
+                        <div class="form__message">
+                          {{ form.errors | default_errors }}
+                        </div>
+                      {%- endif -%}
+
+                      <input type="hidden" name="contact[Product]" value="{{ product.title | escape }}">
+
+                      <div class="field">
+                        <input
+                          class="field__input"
+                          type="text"
+                          id="VentKitEnquiry-name-{{ section.id }}"
+                          name="contact[name]"
+                          value="{{ customer.name | escape }}"
+                          autocomplete="name"
+                          required
+                        >
+                        <label class="field__label" for="VentKitEnquiry-name-{{ section.id }}">Name</label>
+                      </div>
+
+                      <div class="field">
+                        <input
+                          class="field__input"
+                          type="email"
+                          id="VentKitEnquiry-email-{{ section.id }}"
+                          name="contact[email]"
+                          value="{{ customer.email | escape }}"
+                          autocomplete="email"
+                          spellcheck="false"
+                          required
+                        >
+                        <label class="field__label" for="VentKitEnquiry-email-{{ section.id }}">Email</label>
+                      </div>
+
+                      <div class="field">
+                        <input
+                          class="field__input"
+                          type="text"
+                          id="VentKitEnquiry-case-{{ section.id }}"
+                          name="contact[Case model]"
+                          required
+                        >
+                        <label class="field__label" for="VentKitEnquiry-case-{{ section.id }}">Case model</label>
+                      </div>
+
+                      <div class="vent-kit-picker__select">
+                        <label class="form__label" for="VentKitEnquiry-length-{{ section.id }}">Required length</label>
+                        <select
+                          class="select__select"
+                          id="VentKitEnquiry-length-{{ section.id }}"
+                          name="contact[Required length]"
+                          required
+                        >
+                          <option value="20 cm">20 cm</option>
+                          <option value="30 cm">30 cm</option>
+                          <option value="40 cm">40 cm</option>
+                          <option value="Custom">Custom</option>
+                        </select>
+                      </div>
+
+                      <div class="field">
+                        <textarea
+                          class="text-area field__input"
+                          id="VentKitEnquiry-message-{{ section.id }}"
+                          name="contact[body]"
+                          rows="6"
+                          required
+                        ></textarea>
+                        <label class="field__label" for="VentKitEnquiry-message-{{ section.id }}">
+                          Questions or custom requirements
+                        </label>
+                      </div>
+
+                      <button type="submit" class="button">Send enquiry</button>
+                    </div>
+                  </details>
+                {%- endform -%}
               </vent-kit-picker>
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
@@ -1900,30 +1981,20 @@
     },
     {
       "type": "vent_kit_parts",
-      "name": "Vent Kit parts picker",
+      "name": "Vent Kit order details",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "heading",
           "label": "Heading",
-          "default": "Select your mount points"
+          "default": "Select a length"
         },
         {
           "type": "text",
           "id": "helper_text",
           "label": "Helper text",
-          "default": "Choose every position that matches your PC case. Price updates with your selection."
-        },
-        {
-          "type": "image_picker",
-          "id": "diagram",
-          "label": "Parts diagram",
-          "info": "Optional override. Defaults to the theme asset vent-kit-parts-diagram.png."
-        },
-        {
-          "type": "paragraph",
-          "content": "Requires product options: Top mounts (None / Top rear / Top front / Top rear + Top front) and Side mounts (None / Side upper / Side lower / Side upper + Side lower)."
+          "default": "Choose 20 cm, 30 cm, 40 cm, or enter a custom length."
         }
       ]
     }
