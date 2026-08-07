@@ -1,0 +1,326 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_pdHaiC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rGH4Rr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_bVhYwQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_YdRzJz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_rGH4Rr",
+        "text_bVhYwQ",
+        "button_YdRzJz"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_zk4YdL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EAwXpw": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Getting Started</p>",
+            "heading_size": "hxl"
+          }
+        },
+        "text_KHNrUb": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Lets run through setup getting started with your GigglePuck and/or your Giggle Spark</p>"
+          }
+        },
+        "button_EnpHJ9": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EAwXpw",
+        "text_KHNrUb",
+        "button_EnpHJ9"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_DYyDfa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kFA3X4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Step 1: Download the Giggletech Software</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_rjrEwr": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_rbxNiy": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download Link",
+            "button_link": "https://github.com/giggletech/GiggleTech_OSC_Router/releases/download/Velocity-Control/Giggletech.OSC.Router.Velocity.Control.zip",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kFA3X4",
+        "text_rjrEwr",
+        "button_rbxNiy"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "video_raz6PY": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Step 2: Hardware Setup",
+        "heading_size": "h1",
+        "video_url": "https://youtu.be/PgJL-52J5fw",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_JqnNcJ": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Step 2: Unity Setup",
+        "heading_size": "h1",
+        "video_url": "https://youtu.be/TYSZ45tV6Zg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_BB4Mi4": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Step 3a: Speed Setting Setup (Optional)",
+        "heading_size": "h1",
+        "video_url": "https://youtu.be/o3b04HTlJyQ",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_ykLNFF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LB4MCW": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Step 4: VRChat Test Avatar</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_D7PcCU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Test your setup with the Giggletech Avatar</p>"
+          }
+        },
+        "button_GTGKht": {
+          "type": "button",
+          "settings": {
+            "button_label": "Cheeky Devil Avatar",
+            "button_link": "https://vrchat.com/home/avatar/avtr_1baeb187-cd36-4ace-8c9a-347fcb77a2ef",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LB4MCW",
+        "text_D7PcCU",
+        "button_GTGKht"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "51c242cd-ad04-48d5-a9d9-21366fcf5473": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18494289084693__51c242cd-ad04-48d5-a9d9-21366fcf5473-1680639438679e9eaf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Join the <a href=\"https://discord.com/invite/fBhVGmx4yK\" target=\"_blank\" title=\"https://discord.com/invite/fBhVGmx4yK\">Discord</a></p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18494289084693__51c242cd-ad04-48d5-a9d9-21366fcf5473-1680639438679e9eaf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Say hi, access advanced settings, and receive friendly assistance</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18494289084693__51c242cd-ad04-48d5-a9d9-21366fcf5473-1680639438679e9eaf-0",
+        "template--18494289084693__51c242cd-ad04-48d5-a9d9-21366fcf5473-1680639438679e9eaf-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "image_with_text_iEKaT7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fzYfaC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Giggletech Software",
+            "heading_size": "h1"
+          }
+        },
+        "text_UGXw38": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Find the newest Giggletech software to connect VRChat to your Giggletech devices.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_RzM8fk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download",
+            "button_link": "https://github.com/giggletech/GiggleTech_OSC_Router/releases"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fzYfaC",
+        "text_UGXw38",
+        "button_RzM8fk"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/PXL_20240531_024504515_def66d83-c2bd-49f7-b335-e302d25d3dba.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_pdHaiC",
+    "rich_text_zk4YdL",
+    "rich_text_DYyDfa",
+    "video_raz6PY",
+    "video_JqnNcJ",
+    "video_BB4Mi4",
+    "rich_text_ykLNFF",
+    "51c242cd-ad04-48d5-a9d9-21366fcf5473",
+    "image_with_text_iEKaT7"
+  ]
+}
