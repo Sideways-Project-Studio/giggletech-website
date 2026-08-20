@@ -37,6 +37,18 @@
             "picker_type": "button"
           }
         },
+        "vent_kit_ducting_note": {
+          "type": "vent_kit_ducting_note",
+          "settings": {}
+        },
+        "vent_kit_measurements": {
+          "type": "vent_kit_measurements",
+          "settings": {
+            "heading": "Your measurements",
+            "rear_clearance_image": "shopify://shop_images/PXL_20260811_233826747.MP.jpg",
+            "case_size_image": "shopify://shop_images/PC_Dimentions_Arrorws.png"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -83,6 +95,8 @@
         "product-rating",
         "price",
         "variant_picker",
+        "vent_kit_ducting_note",
+        "vent_kit_measurements",
         "quantity_selector",
         "buy_buttons",
         "description",

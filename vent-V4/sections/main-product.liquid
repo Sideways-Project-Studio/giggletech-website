@@ -311,6 +311,17 @@
         class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}"
       >
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
+        {%- liquid
+          assign vent_kit_option = product.selected_or_first_available_variant.title | downcase
+          assign vent_kit_is_digital = false
+          assign vent_kit_includes_duct = false
+          if vent_kit_option contains 'digital'
+            assign vent_kit_is_digital = true
+          endif
+          if vent_kit_option contains 'duct'
+            assign vent_kit_includes_duct = true
+          endif
+        -%}
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -359,6 +370,201 @@
                   {{ product.description }}
                 </div>
               {%- endif -%}
+            {%- when 'vent_kit_ducting_note' -%}
+              {{ 'vent-kit-measurements.css' | asset_url | stylesheet_tag }}
+              <div
+                class="vent-kit-measurements__accessory-note{% if vent_kit_is_digital or vent_kit_includes_duct %} hidden{% endif %}"
+                data-vent-kit-ducting
+                {{ block.shopify_attributes }}
+              >
+                <h3 class="h4">Required: Ducting</h3>
+                <p>
+                  <strong>6-Inch Duct:</strong> We can supply this directly, or you can purchase a standard 6-inch
+                  flexible duct locally via Amazon, eBay, or AliExpress to save on shipping costs.
+                </p>
+              </div>
+            {%- when 'vent_kit_measurements' -%}
+              {{ 'vent-kit-measurements.css' | asset_url | stylesheet_tag }}
+              <div
+                class="vent-kit-measurements{% if vent_kit_is_digital %} hidden{% endif %}"
+                data-vent-kit-measurements
+                {{ block.shopify_attributes }}
+              >
+                <div class="vent-kit-measurements__header">
+                  <h2 class="h4">{{ block.settings.heading | escape }}</h2>
+                  <p>We use these to size your kit.</p>
+                </div>
+
+                <fieldset class="vent-kit-measurements__options">
+                  <legend>Fan size</legend>
+                  <div class="vent-kit-measurements__pills">
+                    <label>
+                      <input
+                        type="radio"
+                        name="properties[Fan Size]"
+                        value="120 mm"
+                        form="{{ product_form_id }}"
+                        checked
+                        required
+                      >
+                      <span>120 mm</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="vent-kit-measurements__fields">
+                  <div>
+                    <label class="form__label" for="VentKitRearClearance-{{ section.id }}-{{ block.id }}">
+                      Rear clearance
+                    </label>
+                    <input
+                      class="vent-kit-measurements__input"
+                      type="text"
+                      id="VentKitRearClearance-{{ section.id }}-{{ block.id }}"
+                      name="properties[Rear Clearance]"
+                      placeholder="e.g. 32 mm"
+                      form="{{ product_form_id }}"
+                      required
+                    >
+                  </div>
+                  <div>
+                    <label class="form__label" for="VentKitCaseHeight-{{ section.id }}-{{ block.id }}">
+                      Case height
+                    </label>
+                    <input
+                      class="vent-kit-measurements__input"
+                      type="text"
+                      id="VentKitCaseHeight-{{ section.id }}-{{ block.id }}"
+                      name="properties[PC Case Height]"
+                      placeholder="e.g. 450 mm"
+                      form="{{ product_form_id }}"
+                      required
+                    >
+                  </div>
+                  <div>
+                    <label class="form__label" for="VentKitCaseWidth-{{ section.id }}-{{ block.id }}">
+                      Case width
+                    </label>
+                    <input
+                      class="vent-kit-measurements__input"
+                      type="text"
+                      id="VentKitCaseWidth-{{ section.id }}-{{ block.id }}"
+                      name="properties[PC Case Width]"
+                      placeholder="e.g. 220 mm"
+                      form="{{ product_form_id }}"
+                      required
+                    >
+                  </div>
+                </div>
+
+                {%- if block.settings.rear_clearance_image != blank
+                  or block.settings.case_size_image != blank
+                  or request.design_mode
+                -%}
+                  <div class="product__accordion accordion vent-kit-measurements__guide">
+                    <details id="Details-vent-kit-guide-{{ section.id }}-{{ block.id }}">
+                      <summary>
+                        <div class="summary__title">
+                          {% render 'icon-accordion', icon: 'ruler' %}
+                          <h3 class="h4 accordion__title">How to measure</h3>
+                        </div>
+                        {% render 'icon-caret' %}
+                      </summary>
+                      <div
+                        class="accordion__content vent-kit-measurements__guide-content"
+                        id="ProductAccordion-vent-kit-guide-{{ section.id }}-{{ block.id }}"
+                      >
+                        <div class="vent-kit-measurements__guide-grid">
+                          {%- if block.settings.rear_clearance_image != blank -%}
+                            <figure>
+                              {{
+                                block.settings.rear_clearance_image
+                                | image_url: width: 900
+                                | image_tag:
+                                  loading: 'lazy',
+                                  widths: '360, 540, 720, 900',
+                                  alt: 'Measure the gap from the top-rear fan mount to the rear panel edge'
+                              }}
+                              <figcaption>
+                                Rear clearance: gap from the top-rear fan mount to the rear panel edge
+                              </figcaption>
+                            </figure>
+                          {%- elsif request.design_mode -%}
+                            <div class="vent-kit-measurements__image-placeholder">
+                              Add the rear-clearance diagram in this block's settings.
+                            </div>
+                          {%- endif -%}
+                          {%- if block.settings.case_size_image != blank -%}
+                            <figure>
+                              {{
+                                block.settings.case_size_image
+                                | image_url: width: 900
+                                | image_tag:
+                                  loading: 'lazy',
+                                  widths: '360, 540, 720, 900',
+                                  alt: 'Measure the height and width of your PC case'
+                              }}
+                              <figcaption>Case height and width</figcaption>
+                            </figure>
+                          {%- elsif request.design_mode -%}
+                            <div class="vent-kit-measurements__image-placeholder">
+                              Add the case-size diagram in this block's settings.
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                    </details>
+                  </div>
+                {%- endif -%}
+
+                <label class="form__label" for="VentKitMeasurementsNotes-{{ section.id }}-{{ block.id }}">
+                  Notes (optional)
+                </label>
+                <textarea
+                  class="vent-kit-measurements__input vent-kit-measurements__notes"
+                  id="VentKitMeasurementsNotes-{{ section.id }}-{{ block.id }}"
+                  name="properties[Additional Notes]"
+                  rows="2"
+                  placeholder="Case model, radiator, anything unusual"
+                  form="{{ product_form_id }}"
+                ></textarea>
+              </div>
+              <script>
+                (() => {
+                  const productInfo = document.getElementById('ProductInfo-{{ section.id }}');
+                  if (!productInfo) return;
+
+                  const picker = productInfo.querySelector('variant-radios, variant-selects');
+                  const ducting = productInfo.querySelector('[data-vent-kit-ducting]');
+                  const measurements = productInfo.querySelector('[data-vent-kit-measurements]');
+                  if (!picker || (!ducting && !measurements)) return;
+
+                  const selectedOption = () => {
+                    const checkedRadio = picker.querySelector('input[type="radio"]:checked');
+                    if (checkedRadio) return checkedRadio.value || '';
+                    const select = picker.querySelector('select');
+                    return select ? select.value : '';
+                  };
+
+                  const updateKitLayout = () => {
+                    const value = selectedOption().toLowerCase();
+                    const isDigital = value.includes('digital');
+                    const includesDuct = value.includes('duct');
+
+                    if (ducting) ducting.classList.toggle('hidden', isDigital || includesDuct);
+
+                    if (measurements) {
+                      measurements.classList.toggle('hidden', isDigital);
+                      measurements.querySelectorAll('input, textarea, select').forEach((field) => {
+                        field.disabled = isDigital;
+                      });
+                    }
+                  };
+
+                  picker.addEventListener('change', updateKitLayout);
+                  updateKitLayout();
+                })();
+              </script>
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
@@ -1241,6 +1447,34 @@
           ],
           "default": "button",
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        }
+      ]
+    },
+    {
+      "type": "vent_kit_ducting_note",
+      "name": "Required ducting note",
+      "limit": 1
+    },
+    {
+      "type": "vent_kit_measurements",
+      "name": "How to measure your setup",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Your measurements"
+        },
+        {
+          "type": "image_picker",
+          "id": "rear_clearance_image",
+          "label": "Rear clearance diagram"
+        },
+        {
+          "type": "image_picker",
+          "id": "case_size_image",
+          "label": "PC case size diagram"
         }
       ]
     },

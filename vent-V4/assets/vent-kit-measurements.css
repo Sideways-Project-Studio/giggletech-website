@@ -1,0 +1,169 @@
+.vent-kit-measurements {
+  margin: 1.6rem 0;
+  padding: 1.4rem;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.15);
+}
+
+.vent-kit-measurements__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.vent-kit-measurements__header h2 {
+  margin: 0;
+}
+
+.vent-kit-measurements__header p {
+  margin: 0;
+  color: rgba(var(--color-foreground), 0.7);
+}
+
+.vent-kit-measurements__accessory-note {
+  margin: 1.2rem 0;
+  padding: 1rem 1.2rem;
+  border-left: 0.3rem solid rgb(var(--color-foreground));
+  background: rgba(var(--color-foreground), 0.05);
+}
+
+.vent-kit-measurements__accessory-note h3,
+.vent-kit-measurements__accessory-note p {
+  margin: 0;
+}
+
+.vent-kit-measurements__accessory-note p {
+  margin-top: 0.4rem;
+  line-height: 1.45;
+}
+
+.vent-kit-measurements__options {
+  margin: 0 0 1.2rem;
+  padding: 0;
+  border: 0;
+}
+
+.vent-kit-measurements__options legend {
+  padding: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1.3rem;
+}
+
+.vent-kit-measurements__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.vent-kit-measurements__options label {
+  position: relative;
+  display: block;
+}
+
+.vent-kit-measurements__options input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.vent-kit-measurements__options span {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  border: 0.1rem solid rgb(var(--color-foreground));
+  background: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+}
+
+.vent-kit-measurements__fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.vent-kit-measurements__fields .form__label,
+.vent-kit-measurements > .form__label {
+  margin-bottom: 0;
+}
+
+.vent-kit-measurements__input {
+  width: 100%;
+  min-height: 4.2rem;
+  margin-top: 0.4rem;
+  padding: 0.6rem 1rem;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.3);
+  border-radius: 0;
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  font: inherit;
+}
+
+.vent-kit-measurements__guide {
+  margin: 0.8rem 0 0;
+  border-bottom: 0;
+}
+
+.vent-kit-measurements__guide.accordion {
+  margin-top: 0.8rem;
+}
+
+.vent-kit-measurements__guide summary {
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.vent-kit-measurements__guide-content {
+  padding: 0;
+  margin-bottom: 0.4rem;
+}
+
+.vent-kit-measurements__guide-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.vent-kit-measurements__guide figure {
+  margin: 0;
+}
+
+.vent-kit-measurements__guide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.vent-kit-measurements__guide figcaption {
+  margin-top: 0.6rem;
+  color: rgba(var(--color-foreground), 0.75);
+  line-height: 1.4;
+}
+
+.vent-kit-measurements__image-placeholder {
+  padding: 1.2rem;
+  border: 0.1rem dashed rgba(var(--color-foreground), 0.35);
+  color: rgba(var(--color-foreground), 0.7);
+  text-align: center;
+}
+
+.vent-kit-measurements__notes {
+  min-height: 6.4rem;
+  resize: vertical;
+}
+
+.vent-kit-measurements > .form__label[for*='VentKitMeasurementsNotes'] {
+  display: block;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 749px) {
+  .vent-kit-measurements {
+    padding: 1.2rem;
+  }
+
+  .vent-kit-measurements__fields {
+    grid-template-columns: 1fr;
+  }
+}
