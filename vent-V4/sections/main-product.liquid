@@ -398,7 +398,7 @@
                 data-vent-kit-digital
                 {{ block.shopify_attributes }}
               >
-                <p>STL / plans for 120 mm cases. You print and source the duct.</p>
+                <p>STL / plans for ATX and mid-tower cases with 120 mm top and rear exhaust. You print and source the duct.</p>
               </div>
             {%- when 'vent_kit_ducting_note' -%}
               {{ 'vent-kit-measurements.css' | asset_url | stylesheet_tag }}
@@ -438,6 +438,7 @@
                       <span>120 mm</span>
                     </label>
                   </div>
+                  <p class="vent-kit-measurements__fan-hint">Top and rear exhaust fans.</p>
                 </fieldset>
 
                 <div class="vent-kit-measurements__fields">
@@ -1506,7 +1507,7 @@
           "type": "textarea",
           "id": "text",
           "label": "Text",
-          "default": "Stop your room from turning into an oven while you game. Made to fit a wide range of cases with 120 mm fans."
+          "default": "Stop your room from turning into an oven while you game. For ATX and mid-tower cases with 120 mm fans on the top and rear exhaust."
         }
       ]
     },
