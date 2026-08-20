@@ -31,11 +31,22 @@
           "type": "price",
           "settings": {}
         },
+        "vent_kit_pitch": {
+          "type": "vent_kit_pitch",
+          "settings": {
+            "text": "Stop your room from turning into an oven while you game. Made to fit a wide range of cases with 120 mm fans."
+          }
+        },
+
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
           }
+        },
+        "vent_kit_digital_note": {
+          "type": "vent_kit_digital_note",
+          "settings": {}
         },
         "vent_kit_ducting_note": {
           "type": "vent_kit_ducting_note",
@@ -59,16 +70,39 @@
             "show_dynamic_checkout": true
           }
         },
+        "vent_kit_help_note": {
+          "type": "vent_kit_help_note",
+          "settings": {}
+        },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
+        },
+        "whats_included": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What's included",
+            "icon": "box",
+            "content": "<h3>Main Assemblies &amp; Housings</h3><ul><li><strong>Top Exhaust Manifold:</strong> Top exhaust cowl, top exhaust frame, and mounting rails</li><li><strong>Rear Exhaust Manifold:</strong> Rear exhaust cowl, cowl mounts, and fan flow director</li><li>Window Exhaust Assembly</li></ul><h3>Fans &amp; Electronics</h3><ul><li><strong>2x 120mm Fans (75 CFM):</strong> Rear scavenger fan &amp; window extractor fan</li><li><strong>Power &amp; Cables:</strong> 4x Fan extension cables (80cm) &amp; 1x SATA power adapter</li></ul><h3>Hardware &amp; Mounting</h3><ul><li><strong>Ducting Hardware:</strong> 4x Duct mounts, zip ties, and adhesive strips</li><li><strong>Fasteners:</strong> Complete screw and bolt assembly kit</li></ul>",
+            "page": ""
+          }
         },
         "8a866a3a-d489-4d64-84d9-44daf182d08a": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Specs & Compatibility",
+            "heading": "Fit & specs",
             "icon": "lightning_bolt",
-            "content": "<h3></h3><ul><li><strong>Fan Compatibility:</strong> Fits standard 120mm PC case fans.</li><li><strong>Mounting:</strong> Compatible with standard fans and 1x, 2x, or 3x radiators.</li><li><strong>Hose Diameter:</strong> 6-inch high-flow flexible ducting.</li><li><strong>Hose Length:</strong> Extendable up to 3 meters.</li><li><strong>Material:</strong> Heat-resistant, high-durability 3D-printed PETG.</li><li><strong>Window Compatibility:</strong> Includes universal adapter for standard sliding and angled windows. (Window board included—may require minor trimming for a perfect fit).</li><li><strong>Wall Clearance:</strong> Requires at least 80mm of space behind your PC to prevent hose kinks.</li></ul>",
+            "content": "<h3>Made to Order</h3><ul><li><strong>Universal Compatibility:</strong> Fits the vast majority of standard ATX and mid-tower cases using 120mm top and rear exhaust ports (including AIO liquid radiator setups).</li><li><strong>Durable Construction:</strong> Built with heat-stable PETG manifolds and flexible polypropylene cowlings.</li><li><strong>Tailored Fit:</strong> The dimensions you provide at checkout allow us to size components specifically for your chassis.</li></ul><h3>Specs</h3><ul><li><strong>Hose space:</strong> Leave at least 80 mm behind the PC so the duct does not kink.</li><li><strong>Duct:</strong> 6-inch flexible hose, up to 3 m.</li><li><strong>Window:</strong> Adapter for sliding and angled windows. The board may need a small trim.</li></ul>",
+            "page": ""
+          }
+        },
+        "vent_kit_returns": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Important sizing note",
+            "icon": "return",
+            "content": "<p><strong>Measure Before You Buy:</strong> Please verify your case dimensions and confirm your rear fan mount clearance before ordering.</p><p><strong>Return Policy:</strong> Because each unit is custom-made to order, returns due to incorrect sizing incur a restocking fee.</p>",
             "page": ""
           }
         },
@@ -94,13 +128,17 @@
         "title",
         "product-rating",
         "price",
+        "vent_kit_pitch",
         "variant_picker",
+        "vent_kit_digital_note",
         "vent_kit_ducting_note",
         "vent_kit_measurements",
         "quantity_selector",
         "buy_buttons",
-        "description",
+        "vent_kit_help_note",
+        "whats_included",
         "8a866a3a-d489-4d64-84d9-44daf182d08a",
+        "vent_kit_returns",
         "61453d5f-79dd-492e-8282-459e611e76ab",
         "share"
       ],

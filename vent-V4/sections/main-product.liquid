@@ -370,6 +370,36 @@
                   {{ product.description }}
                 </div>
               {%- endif -%}
+            {%- when 'vent_kit_help_note' -%}
+              {{ 'vent-kit-measurements.css' | asset_url | stylesheet_tag }}
+              <div class="vent-kit-help" {{ block.shopify_attributes }}>
+                <p class="vent-kit-help__lead">Need help?</p>
+                <p>Not sure if your PC case or window setup will work? Reach out before you order.</p>
+                <ul class="vent-kit-help__links">
+                  <li>
+                    <a href="https://discord.com/invite/fBhVGmx4yK" target="_blank" rel="noopener">
+                      Join the Giggletech Discord
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:hello@giggletech.io">Email us: hello@giggletech.io</a>
+                  </li>
+                </ul>
+              </div>
+            {%- when 'vent_kit_pitch' -%}
+              {{ 'vent-kit-measurements.css' | asset_url | stylesheet_tag }}
+              <p class="vent-kit-pitch" {{ block.shopify_attributes }}>
+                {{ block.settings.text | escape }}
+              </p>
+            {%- when 'vent_kit_digital_note' -%}
+              {{ 'vent-kit-measurements.css' | asset_url | stylesheet_tag }}
+              <div
+                class="vent-kit-measurements__accessory-note{% unless vent_kit_is_digital %} hidden{% endunless %}"
+                data-vent-kit-digital
+                {{ block.shopify_attributes }}
+              >
+                <p>STL / plans for 120 mm cases. You print and source the duct.</p>
+              </div>
             {%- when 'vent_kit_ducting_note' -%}
               {{ 'vent-kit-measurements.css' | asset_url | stylesheet_tag }}
               <div
@@ -377,10 +407,8 @@
                 data-vent-kit-ducting
                 {{ block.shopify_attributes }}
               >
-                <h3 class="h4">Required: Ducting</h3>
                 <p>
-                  <strong>6-Inch Duct:</strong> We can supply this directly, or you can purchase a standard 6-inch
-                  flexible duct locally via Amazon, eBay, or AliExpress to save on shipping costs.
+                  6-inch duct not included. Buy one locally to save on shipping, or choose the kit with duct.
                 </p>
               </div>
             {%- when 'vent_kit_measurements' -%}
@@ -392,7 +420,7 @@
               >
                 <div class="vent-kit-measurements__header">
                   <h2 class="h4">{{ block.settings.heading | escape }}</h2>
-                  <p>We use these to size your kit.</p>
+                  <p>Needed so we can size the manifolds.</p>
                 </div>
 
                 <fieldset class="vent-kit-measurements__options">
@@ -536,8 +564,9 @@
 
                   const picker = productInfo.querySelector('variant-radios, variant-selects');
                   const ducting = productInfo.querySelector('[data-vent-kit-ducting]');
+                  const digitalNote = productInfo.querySelector('[data-vent-kit-digital]');
                   const measurements = productInfo.querySelector('[data-vent-kit-measurements]');
-                  if (!picker || (!ducting && !measurements)) return;
+                  if (!picker || (!ducting && !measurements && !digitalNote)) return;
 
                   const selectedOption = () => {
                     const checkedRadio = picker.querySelector('input[type="radio"]:checked');
@@ -552,6 +581,7 @@
                     const includesDuct = value.includes('duct');
 
                     if (ducting) ducting.classList.toggle('hidden', isDigital || includesDuct);
+                    if (digitalNote) digitalNote.classList.toggle('hidden', !isDigital);
 
                     if (measurements) {
                       measurements.classList.toggle('hidden', isDigital);
@@ -688,9 +718,21 @@
                     {{ block.shopify_attributes }}
                   >
                     {%- for option in product.options_with_values -%}
+                      {%- liquid
+                        assign option_label = option.name
+                        if template.suffix == 'vent-kit' and option.name == 'Full Kit'
+                          assign option_label = 'Package'
+                        endif
+                      -%}
                       <fieldset class="js product-form__input">
-                        <legend class="form__label">{{ option.name }}</legend>
+                        <legend class="form__label">{{ option_label }}</legend>
                         {%- for value in option.values -%}
+                          {%- liquid
+                            assign option_value_label = value
+                            if template.suffix == 'vent-kit' and value contains 'Duct'
+                              assign option_value_label = 'Full Kit + 6" Duct'
+                            endif
+                          -%}
                           <input
                             type="radio"
                             id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -702,7 +744,7 @@
                             {% endif %}
                           >
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            {{ value }}
+                            {{ option_value_label }}
                           </label>
                         {%- endfor -%}
                       </fieldset>
@@ -1449,6 +1491,29 @@
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
         }
       ]
+    },
+    {
+      "type": "vent_kit_help_note",
+      "name": "Help before you order",
+      "limit": 1
+    },
+    {
+      "type": "vent_kit_pitch",
+      "name": "Vent kit pitch",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Stop your room from turning into an oven while you game. Made to fit a wide range of cases with 120 mm fans."
+        }
+      ]
+    },
+    {
+      "type": "vent_kit_digital_note",
+      "name": "Digital plans note",
+      "limit": 1
     },
     {
       "type": "vent_kit_ducting_note",

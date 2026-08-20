@@ -1,3 +1,40 @@
+.vent-kit-help {
+  margin: 1.6rem 0 0.8rem;
+  color: rgba(var(--color-foreground), 0.75);
+  line-height: 1.5;
+}
+
+.vent-kit-help p {
+  margin: 0;
+}
+
+.vent-kit-help__lead {
+  margin-bottom: 0.2rem;
+  color: rgb(var(--color-foreground));
+  font-weight: 600;
+}
+
+.vent-kit-help__links {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vent-kit-help__links li + li {
+  margin-top: 0.3rem;
+}
+
+.vent-kit-help a {
+  color: rgb(var(--color-foreground));
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.vent-kit-pitch {
+  margin: 0 0 1.6rem;
+  line-height: 1.45;
+}
+
 .vent-kit-measurements {
   margin: 1.6rem 0;
   padding: 1.4rem;
@@ -34,8 +71,11 @@
 }
 
 .vent-kit-measurements__accessory-note p {
-  margin-top: 0.4rem;
   line-height: 1.45;
+}
+
+.vent-kit-measurements__accessory-note h3 + p {
+  margin-top: 0.4rem;
 }
 
 .vent-kit-measurements__options {
