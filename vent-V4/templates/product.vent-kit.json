@@ -74,6 +74,12 @@
           "type": "vent_kit_help_note",
           "settings": {}
         },
+        "vent_kit_video": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"vent-kit-video\"><h2 class=\"vent-kit-video__heading\">Vent Kit Installation</h2><div class=\"vent-kit-video__media\"><iframe src=\"https://www.youtube-nocookie.com/embed/wadR17EOx5U\" title=\"Vent Kit Installation\" loading=\"lazy\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe></div></div>"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -136,6 +142,7 @@
         "quantity_selector",
         "buy_buttons",
         "vent_kit_help_note",
+        "vent_kit_video",
         "whats_included",
         "8a866a3a-d489-4d64-84d9-44daf182d08a",
         "vent_kit_returns",
@@ -152,19 +159,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "vent_system_video": {
-      "type": "video",
-      "settings": {
-        "heading": "See the Vent System in action",
-        "heading_size": "h1",
-        "video_url": "https://www.youtube.com/watch?v=wadR17EOx5U",
-        "description": "See how the GiggleTech Computer Exhaust Vent System works.",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 28,
-        "padding_bottom": 36
       }
     },
     "product-recommendations": {
@@ -232,7 +226,6 @@
   },
   "order": [
     "main",
-    "vent_system_video",
     "product-recommendations",
     "edc3a255-1850-4328-b1bf-ae1c0ee68b26"
   ]

@@ -35,6 +35,32 @@
   line-height: 1.45;
 }
 
+.vent-kit-video {
+  margin: 2rem 0;
+}
+
+.vent-kit-video__heading {
+  margin: 0 0 1rem;
+  font-size: calc(var(--font-heading-scale) * 2rem);
+}
+
+.vent-kit-video__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--media-radius);
+  background: rgb(0, 0, 0);
+}
+
+.vent-kit-video__media iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .vent-kit-measurements {
   margin: 1.6rem 0;
   padding: 1.4rem;
