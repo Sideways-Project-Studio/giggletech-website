@@ -36,6 +36,26 @@
     max-width: {{ section.settings.logo_width }}px;
   }
 
+  .header__heading-link {
+    position: relative;
+  }
+
+  .header__made-in-australia {
+    display: block;
+    position: absolute;
+    bottom: -0.65rem;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
   @media screen and (min-width: 990px) {
     header-drawer {
       display: none;
@@ -387,6 +407,9 @@
             {%- else -%}
               <span class="h2">{{ shop.name }}</span>
             {%- endif -%}
+            {%- if localization.country.iso_code == 'AU' -%}
+              <span class="header__made-in-australia">Made in Australia</span>
+            {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
         </h1>
@@ -509,6 +532,9 @@
               }}
             {%- else -%}
               <span class="h2">{{ shop.name }}</span>
+            {%- endif -%}
+            {%- if localization.country.iso_code == 'AU' -%}
+              <span class="header__made-in-australia">Made in Australia</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
